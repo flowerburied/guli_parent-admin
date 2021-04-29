@@ -93,8 +93,8 @@
   </div>
 </template>
 <script>
-// import course from '@/api/edu/course'
-// import subject from '@/api/edu/subject'
+import course from '@/api/edu/course'
+import subject from '@/api/edu/subject'
 export default {
     data() {
         return {
@@ -106,7 +106,7 @@ export default {
                 teacherId: '',
                 lessonNum: 0,
                 description: '',
-                cover: '/static/01.jpg',
+                cover: '/static/01.png',
                 price: 0
             },
             BASE_API: process.env.BASE_API, // 接口API地址
@@ -157,7 +157,7 @@ export default {
         },
         //查询所有的一级分类
         getOneSubject() {
-            subject.getSubjectList()
+            subject.getAllSubject()
                 .then(response => {
                     this.subjectOneList = response.data.list
                 })
