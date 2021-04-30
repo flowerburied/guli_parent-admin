@@ -71,7 +71,6 @@
         <!-- 课程封面 TODO -->
         <!-- 课程封面-->
         <el-form-item label="课程封面">
-
             <el-upload
                 :show-file-list="false"
                 :on-success="handleAvatarSuccess"
