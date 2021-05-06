@@ -20,7 +20,7 @@ export default {
     },
 
     //3 根据课程id查询课程基本信息
-    getCourseInfo(data) {
+    getCourseInfoId(data) {
         return request({
             url: '/eduservice/course/getCourseInfo/' + data,
             method: 'get'
