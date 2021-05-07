@@ -27,7 +27,7 @@ export default {
         })
     },
     // 4 修改课程信息
-    updataCourseInfo(data) {
+    updateCourseInfo(data) {
         return request({
             url: '/eduservice/course/updataCourseInfo/',
             method: 'post',

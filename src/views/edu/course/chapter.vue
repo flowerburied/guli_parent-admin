@@ -87,7 +87,7 @@
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogVideoFormVisible = false">取 消</el-button>
         <el-button
-          :disabled="saveVideoBtnDisabled"
+ 
           type="primary"
           @click="saveOrUpdateVideo"
           >确 定</el-button
@@ -98,7 +98,7 @@
 </template>
 <script>
 import chapter from "@/api/edu/chapter";
-// import video from "@/api/edu/video";
+// import video from '@/api/edu/video'
 
 export default {
   data() {
