@@ -98,7 +98,7 @@
 </template>
 <script>
 import chapter from "@/api/edu/chapter";
-// import video from '@/api/edu/video'
+import video from '@/api/edu/video'
 
 export default {
   data() {
@@ -258,7 +258,8 @@ export default {
     //根据课程id查询章节和小节
     getChapterVideo() {
       chapter.getAllChapterVideo(this.courseId).then((response) => {
-        this.chapterVideoList = response.data.allChapterVideo;
+        this.chapterVideoList = response.data.addChapterVideo;
+        // console.log(" this.chapterVideoList ", this.chapterVideoList )
       });
     },
     previous() {
