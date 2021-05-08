@@ -33,6 +33,31 @@ export default {
             method: 'post',
             data: data
         })
-    }
+    },
+    // 4 修改课程信息
+    getPublihCourseInfo(data) {
+        return request({
+            url: '/eduservice/course/getPublishCourseInfo/' + data,
+            method: 'get',
+
+        })
+    },
+    // 4 修改课程信息
+    publihCourse(data) {
+        return request({
+            url: '/eduservice/course/publishCourse/' + data,
+            method: 'post',
+
+        })
+    },
+
+    // 查询所有课程
+    getListCourse() {
+        return request({
+            url: '/eduservice/course/',
+            method: 'get',
+
+        })
+    },
 
 }
